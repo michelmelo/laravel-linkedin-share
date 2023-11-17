@@ -1,0 +1,32 @@
+{
+    "name": "michelmelo/linkedin-share",
+    "description": "This package allows you to easily share content on Likedin, using the v2 API.",
+    "keywords": ["linkedin", "linkedin share", "linkedin API v2"],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.4.0",
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "authors": [
+        {
+            "name": "Michel Melo",
+            "email": "eu@michelmelo.pt"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MichelMelo\\LinkedinShare\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MichelMelo\\LinkedinShare\\LinkedinShareServiceProvider"
+            ],
+            "aliases": {
+                "LinkedinShare": "MichelMelo\\LinkedinShare\\Facades\\LinkedinShare"
+            }
+        }
+    }
+}
